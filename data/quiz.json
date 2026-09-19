@@ -1,0 +1,31 @@
+{
+  "flashcardSets": [
+    {
+      "id": "ports-common",
+      "title": "Common Ports",
+      "source": "ports.json",
+      "filter": {"port": [22, 25, 53, 80, 110, 123, 143, 161, 389, 443, 445, 587, 636, 993, 995, 1433, 3306, 3389, 5432, 6379, 8080, 9200]}
+    },
+    {
+      "id": "acronyms-core",
+      "title": "Core Acronyms",
+      "source": "acronyms.json"
+    }
+  ],
+  "quizPools": [
+    {
+      "id": "ports-quiz",
+      "title": "Name that port",
+      "type": "portToName",
+      "source": "ports.json",
+      "filter": {"port": [22, 80, 443, 53, 25, 110, 143, 445, 3389, 3306]}
+    },
+    {
+      "id": "acronym-quiz",
+      "title": "Acronym expansion",
+      "type": "acronymExpand",
+      "source": "acronyms.json",
+      "filter": {"startsWith": ["CIDR", "OSPF", "BGP", "ARP", "MTU", "RDP", "VLAN", "STP", "OSI", "TLS"]}
+    }
+  ]
+}

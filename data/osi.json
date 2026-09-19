@@ -1,0 +1,9 @@
+[
+  {"layer": 7, "name": "Application", "examples": "HTTP, HTTPS, FTP, SMTP, DNS, SSH", "desc": "Network services for end-user applications. Closest to the user.", "dataUnit": "Data"},
+  {"layer": 6, "name": "Presentation", "examples": "TLS/SSL, JPEG, MPEG, ASCII, encryption", "desc": "Translates, encrypts, compresses data between app and session.", "dataUnit": "Data"},
+  {"layer": 5, "name": "Session", "examples": "Sockets, NetBIOS, RPC, SIP", "desc": "Opens, manages, and tears down sessions between endpoints.", "dataUnit": "Data"},
+  {"layer": 4, "name": "Transport", "examples": "TCP, UDP, QUIC, SCTP", "desc": "Reliable (or best-effort) end-to-end delivery, segmentation, flow control.", "dataUnit": "Segment / Datagram"},
+  {"layer": 3, "name": "Network", "examples": "IP, ICMP, IPsec, OSPF, BGP", "desc": "Routing and logical addressing across networks.", "dataUnit": "Packet"},
+  {"layer": 2, "name": "Data Link", "examples": "Ethernet, PPP, ARP, MAC, switches", "desc": "Node-to-node frame delivery on the same physical medium.", "dataUnit": "Frame"},
+  {"layer": 1, "name": "Physical", "examples": "Cables, fibers, radio, voltage, hubs", "desc": "Raw bit transmission over the physical medium.", "dataUnit": "Bit"}
+]
